@@ -1,0 +1,89 @@
+{
+  "ATI": {
+    "parameters": [
+      {
+        "name": "manufacturer",
+        "desc": "模组厂商信息、产品名称、版本号"
+      },
+      {
+        "name": "module_version",
+        "desc": "模组型号"
+      },
+      {
+        "name": "soft_version",
+        "desc": "模组软件版本"
+      }
+    ],
+    "examples": [
+      "ATI",
+      "查询厂商信息",
+      "+CGMI: Neoway",
+      "OK"
+    ]
+  },
+  "AT+GMR": {
+    "parameters": [
+      {
+        "name": "re version",
+        "desc": "模组软件版本信息"
+      }
+    ],
+    "examples": [
+      "AT+GMR",
+      "+GMR:N706-R004-STD-B2-003",
+      "OK"
+    ]
+  },
+  "AT+CSQ": {
+    "parameters": [
+      {
+        "name": "signal",
+        "desc": "信号强度"
+      },
+      {
+        "name": "ber",
+        "desc": "误码率"
+      }
+    ],
+    "examples": [
+      "AT+CSQ",
+      "+CSQ:19,2",
+      "OK"
+    ]
+  },
+  "AT+CREG": {
+    "parameters": [
+      {
+        "name": "n",
+        "desc": "网络注册主动提供结果代码设置"
+      },
+      {
+        "name": "stat",
+        "desc": "网络注册状态"
+      }
+    ],
+    "examples": [
+      "AT+CREG?",
+      "+CREG: 0,1",
+      "OK"
+    ]
+  },
+  "AT+CGATT": {
+    "parameters": [],
+    "examples": [
+      "ATE1/ATE0：打开&关闭回显",
+      "打开（或关闭）模组AT指令回显功能。",
+      "该模组默认回显功能为打开状态。",
+      "该指令设置后掉电不保存。",
+      "ATD*99#：GPRS",
+      "使用外部协议栈，进行GPRS拨号连接。",
+      "进行拨号之前一定要确保CREG已经注册成功，并且设置了APN。"
+    ]
+  },
+  "AT+NSTGETRSSI": {
+    "parameters": [],
+    "examples": [
+      "短消息服务指令"
+    ]
+  }
+}

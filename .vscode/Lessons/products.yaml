@@ -1,0 +1,16 @@
+
+products:
+  - name: N706B
+    version: V1.0
+    baud_rate: 115200
+    commands:
+      - cmd: AT+CSQ
+        desc: 查询信号强度
+        example: "+CSQ: 25,0"
+  - name: N58-GL
+    version: V2.0
+    baud_rate: 921600
+    commands:
+      - cmd: AT+CGATT
+        desc: 网络附着
+        example: "+CGATT: 1"

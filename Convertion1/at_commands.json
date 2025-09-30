@@ -1,0 +1,519 @@
+{
+  "at_commands": [
+    {
+      "section": null,
+      "cmd": "ATI",
+      "desc": "获取模组厂商信息",
+      "parameters": [
+        {
+          "name": "manufacturer",
+          "desc": "模组厂商信息、产品名称、版本号"
+        },
+        {
+          "name": "module_version",
+          "desc": "模组型号"
+        },
+        {
+          "name": "soft_version",
+          "desc": "模组软件版本"
+        }
+      ],
+      "examples": [
+        "AT+GMR–查询版本信息",
+        "查询软件版本信息。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+GMR",
+      "desc": "查询版本信息",
+      "parameters": [
+        {
+          "name": "re version",
+          "desc": "模组软件版本信息"
+        }
+      ],
+      "examples": [
+        "AT+CSQ–获取信号强度",
+        "查询接收信号强度<rssi>。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CSQ",
+      "desc": "获取信号强度",
+      "parameters": [
+        {
+          "name": "signal",
+          "desc": "信号强度"
+        },
+        {
+          "name": "ber",
+          "desc": "误码率"
+        }
+      ],
+      "examples": [
+        "AT+CREG–查询网络注册状态",
+        "查询模组的当前网络注册状态。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CREG",
+      "desc": "查询网络注册状态",
+      "parameters": [],
+      "examples": [
+        "AT+CEREG–获取EPS网络注册状态",
+        "查询EPS网络注册状态。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CEREG",
+      "desc": "获取EPS网络注册状态",
+      "parameters": [],
+      "examples": [
+        "AT+COPS–网络选择",
+        "查询网络。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+COPS",
+      "desc": "网络选择",
+      "parameters": [],
+      "examples": [
+        "AT+CIMI–查询国际移动用户识别码",
+        "获取国际移动用户识别码IMSI（international mobile subscriber identification）。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CIMI",
+      "desc": "查询国际移动用户识别码",
+      "parameters": [],
+      "examples": [
+        "AT+CGSN–获取通信模组IMEI号",
+        "获取模组的产品序列号，也就是IMEI号（International Mobile Equipment Identity）。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CGSN",
+      "desc": "获取通信模组IMEI号",
+      "parameters": [],
+      "examples": [
+        "AT+GSN–获取通信模组IMEI号",
+        "获取模组的产品序列号，也就是IMEI号（International Mobile Equipment Identity）。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+GSN",
+      "desc": "获取通信模组IMEI号",
+      "parameters": [],
+      "examples": [
+        "AT+CCID–获取SIM卡标识",
+        "获取SIM卡的ICCID。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CCID",
+      "desc": "获取SIM卡标识",
+      "parameters": [],
+      "examples": [
+        "AT+CGMM–查询模组型号",
+        "查询模组型号。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CGMM",
+      "desc": "查询模组型号",
+      "parameters": [],
+      "examples": [
+        "AT+GMM–查询模组型号",
+        "查询模组型号。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+GMM",
+      "desc": "查询模组型号",
+      "parameters": [],
+      "examples": [
+        "AT+IPR–设置模组波特率",
+        "设置模组波特率，默认掉电保存。",
+        "若波特率查询返回为0，表示模组波特率自适应。默认为波特率自适应（备注：自适应波特率不超过115200）。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+IPR",
+      "desc": "设置模组波特率",
+      "parameters": [],
+      "examples": [
+        "AT+CFUN–设置模组功能",
+        "通过设置<fun>来选择模组的功能。<fun>只支持某些值。",
+        "设置该参数后，掉电不保存。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CFUN",
+      "desc": "设置模组功能",
+      "parameters": [],
+      "examples": [
+        "AT+CMUX–串口多路复用指令",
+        "启用通信模组串口多路复用功能。",
+        "基于一个物理通信串口，通过规范协议虚拟出两个甚至多个串口，一般虚拟三个串口，一个串口进行外部协议栈拨号上网，另外两个收发AT指令。建议使用AT+CMUX=0启用串口多路复用功能。",
+        "建议使用AT+CMUX=0启用串口多路复用功能。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CMUX",
+      "desc": "串口多路复用指令",
+      "parameters": [],
+      "examples": [
+        "AT+CCLK–时钟管理",
+        "设置和查询模组的实时时钟。",
+        "设置的时间立即生效，掉电保存；默认时钟为0时区，使用1/4时区。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CCLK",
+      "desc": "时钟管理",
+      "parameters": [],
+      "examples": [
+        "AT+CPIN–输入PIN码",
+        "查询PIN状态以及输入PIN码。",
+        "若要输入PIN码，需锁定当前SIM卡（AT+CLCK=\"SC\",1,\"1234\"）后，重启模组才能输入PIN码；输入三次错误的PIN码后，会要求输入PUK码才能解锁。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CPIN",
+      "desc": "输入PIN码",
+      "parameters": [],
+      "examples": [
+        "AT+CLCK–PIN使能与查询功能指令",
+        "锁、解锁以及查询MT和网络设备。设置该参数，重启模组后生效。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CLCK",
+      "desc": "PIN使能与查询功能指令",
+      "parameters": [],
+      "examples": [
+        "AT+CPWD–修改密码指令",
+        "修改模组锁功能的密码。",
+        "若需修改PIN码，需锁定SIM卡（AT+CLCK=\"SC\",1,\"1234\"）后才能修改。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CPWD",
+      "desc": "修改密码指令",
+      "parameters": [],
+      "examples": [
+        "AT+CGDCONT–设置PDP格式",
+        "设置GPRS的PDP（Packet Data Protocol，分组数据协议）格式。APN允许设置的长度最长是50。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CGDCONT",
+      "desc": "设置PDP格式",
+      "parameters": [],
+      "examples": [
+        "AT+XGAUTH–用户认证",
+        "PDP认证。",
+        "该指令要放在AT+CGDCONT这条指令后面。目前在专网中各个地方逐渐增加了用户身份认证需求，使用内部协议栈，需要使用到这条指令，因此，请在代码流程上加上这条指令。",
+        "联通卡默认用户名和密码是“card”和“card”。",
+        "<cid>对应+CGDCONT中的<cid>。",
+        "<name>和<pwd>允许设置的最大字符串长度都是50"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+XGAUTH",
+      "desc": "用户认证",
+      "parameters": [],
+      "examples": [
+        "AT+CGATT–设置GPRS附着和分离",
+        "该指令用来查询、设置GPRS附着和分离。掉电不保存。",
+        "模组默认情况下，会主动进行GPRS附着。",
+        "进行PPP连接之前要确保GPRS是处于附着状态，AT流程增加查询指令AT+CGATT?：",
+        "如果返回值是1，则可以直接进行PPP连接；",
+        "如果返回值是0，则需进行手动附着，即AT+CGATT=1。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CGATT",
+      "desc": "设置GPRS附着和分离",
+      "parameters": [],
+      "examples": [
+        "ATE1/ATE0–打开&关闭回显",
+        "打开（或关闭）模组AT指令回显功能。",
+        "该模组默认回显功能为打开状态。",
+        "该指令设置后掉电不保存。",
+        "ATD*99#–GPRS",
+        "使用外部协议栈，进行GPRS拨号连接。",
+        "进行拨号之前一定要确保CREG已经注册成功，并且设置了APN。",
+        "AT+CESQ–扩展信号强度",
+        "查询扩展信号强度。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CESQ",
+      "desc": "扩展信号强度",
+      "parameters": [],
+      "examples": [
+        "AT+NWDNS–域名解析",
+        "内置协议栈拨号后，查询DNS解析结果。",
+        "先使用AT+XIIC命令拨号成功后，才能执行该命令。",
+        "域名填入不校验正确性，需保证填入内容的正确性。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+NWDNS",
+      "desc": "域名解析",
+      "parameters": [],
+      "examples": [
+        "AT+NWENPWRSAVE–休眠（Sleep）设置",
+        "设置是否允许模组进入休眠（Sleep）模式。该命令设置掉电不保存。",
+        "模组DTR信号默认为低电平：",
+        "发送允许进入休眠模式指令之后，且模组DTR信号为低（或高）电平，模组内部各个部分的电路都允许进入休眠状态模组才能进入休眠。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+NWENPWRSAVE",
+      "desc": "休眠（Sleep）设置",
+      "parameters": [],
+      "examples": [
+        "AT+NWPWROFF–模组关机指令",
+        "模组关机指令。发送 AT+NWPWROFF 之前，需悬空或拉高模组 POWERKEY 管脚电平。返回 OK 后，若需重新开机，可拉低 POWERKEY 管脚电平。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+NWPWROFF",
+      "desc": "模组关机指令",
+      "parameters": [],
+      "examples": [
+        "AT+NWRFTEST–模组强发强收指令（仅可用于测试）",
+        "用于在测试模式下验证模组强发强收功能, 只能测试每个频段的中心频点的发射功率和接收功率精度。由于平台限制，强收强发测试精度均有一些误差。",
+        "强发测试只能验证最大发射功率23db和10db，其他值无法验证。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+NWRFTEST",
+      "desc": "模组强发强收指令（仅可用于测试）",
+      "parameters": [],
+      "examples": [
+        "AT+NSTGETRSSI–获取强收模式下模组的接收功率（仅可用于测试）",
+        "用于在测试模式下验证模组的接收功率，强收测试精度会有一些误差。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+NSTGETRSSI",
+      "desc": "获取强收模式下模组的接收功率（仅可用于测试）",
+      "parameters": [],
+      "examples": [
+        "短消息服务指令",
+        "AT+CSMS–选择短信服务",
+        "用于支持的短消息包括：发送（SMS-MO）、接收（SMS-MT）、小区广播（SMS-CB）。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CSMS",
+      "desc": "选择短信服务",
+      "parameters": [],
+      "examples": [
+        "AT+CPMS–首选短信存储器",
+        "用于首选短信存储器。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CPMS",
+      "desc": "首选短信存储器",
+      "parameters": [],
+      "examples": [
+        "AT+CMGF–设置短消息模式",
+        "设置短信的输入模式。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CMGF",
+      "desc": "设置短消息模式",
+      "parameters": [],
+      "examples": [
+        "AT+CSCS–设置TE字符集",
+        "设置TE字符集格式。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CSCS",
+      "desc": "设置TE字符集",
+      "parameters": [],
+      "examples": [
+        "AT+CNMI–设置短信指示格式",
+        "设置模组从网络接收到短信息后如何通知用户。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CNMI",
+      "desc": "设置短信指示格式",
+      "parameters": [],
+      "examples": [
+        "AT+CMGR–读短消息",
+        "读取当前存储器中的短消息（需预先通过AT+CPMS指令设定当前存储器）。",
+        "如果接收到的短信状态是未读的，执行该指令后，短信存储状态就变成已读。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CMGR",
+      "desc": "读短消息",
+      "parameters": [],
+      "examples": [
+        "AT+CMGL–短信列表",
+        "读取某一类存储的短信，短信会被从+CPMS 指令选取的当前的存储器中读出来。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CMGL",
+      "desc": "短信列表",
+      "parameters": [],
+      "examples": [
+        "AT+CMGS–发送短消息",
+        "将短消息从模组发送到网络，短消息发送成功后网络返回参考值<mr>给模组。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CMGS",
+      "desc": "发送短消息",
+      "parameters": [],
+      "examples": [
+        "AT+CMGW–写短消息",
+        "往存储器中写入短消息，正确存储后返回位置信息<index>。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CMGW",
+      "desc": "写短消息",
+      "parameters": [],
+      "examples": [
+        "AT+CMSS–发送已保存的短消息",
+        "发送存储器中<index>指定位置的短消息（SMS-SUBMIT），短消息发送成功后网络返回参考值<mr>给终端。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CMSS",
+      "desc": "发送已保存的短消息",
+      "parameters": [],
+      "examples": [
+        "AT+CMGD–删除短消息",
+        "从当前存储器中删除短消息。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CMGD",
+      "desc": "删除短消息",
+      "parameters": [],
+      "examples": [
+        "AT+CSCA–短信中心号码",
+        "设置短信中心号码。CDMA模式下，不支持这条指令。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CSCA",
+      "desc": "短信中心号码",
+      "parameters": [],
+      "examples": [
+        "AT+CSMP–设置文本模式参数",
+        "文本模式下，选择需要的附加参数取值；设置从SMSC接收到该消息时算起的有效期或定义有效期终止的绝对时间。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CSMP",
+      "desc": "设置文本模式参数",
+      "parameters": [],
+      "examples": [
+        "AT+CSDH–显示文本模式参数",
+        "设置是否在文本模式下的结果码中显示详细的头信息。该指令在短信文本模式下有效，需发送AT+CMGF=1设置成文本模式。"
+      ],
+      "format": "参数"
+    },
+    {
+      "section": null,
+      "cmd": "AT+CSDH",
+      "desc": "显示文本模式参数",
+      "parameters": [],
+      "examples": [],
+      "format": "参数"
+    }
+  ]
+}
