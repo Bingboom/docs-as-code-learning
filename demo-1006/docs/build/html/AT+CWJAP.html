@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AT+CWJAP &mdash; AT Command Manual 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="AT+CREG" href="AT%2BCREG.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            AT Command Manual
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">命令列表</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="AT%2BCREG.html">AT+CREG</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">AT+CWJAP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">参数说明</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">示例</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">AT Command Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">AT+CWJAP</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/AT+CWJAP.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="at-cwjap">
+<h1>AT+CWJAP<a class="headerlink" href="#at-cwjap" title="Link to this heading"></a></h1>
+<p><strong>命令标题</strong>：连接WiFi网络</p>
+<p><strong>命令类型</strong>：设置, 查询</p>
+<dl class="simple">
+<dt>命令格式::</dt><dd><p>AT+CWJAP=&lt;ssid&gt;,&lt;pwd&gt;[,&lt;bssid&gt;][,&lt;prio&gt;]
+AT+CWJAP?</p>
+</dd>
+</dl>
+<section id="id1">
+<h2>参数说明<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 33.3%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数名</p></th>
+<th class="head"><p>描述</p></th>
+<th class="head"><p>取值范围</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&lt;ssid&gt;</p></td>
+<td><p>WiFi名称</p></td>
+<td><p>格式: 字符串</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="simple">
+<dt>长度: 1-32字节</dt><dd><ul class="simple">
+<li><ul>
+<li><p>&lt;pwd&gt;</p></li>
+<li><p>WiFi密码</p></li>
+<li><p>格式: ASCII字符</p></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+<p>长度: 8-64字节</p>
+</section>
+<section id="id2">
+<h2>示例<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>命令: AT+CWJAP=&quot;MyWiFi&quot;,&quot;123456&quot;
+响应: OK
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>命令: AT+CWJAP?
+响应: +CWJAP:&quot;MyWiFi&quot;,&quot;aa:bb:cc:dd:ee:ff&quot;,-50,1 OK
+</pre></div>
+</div>
+<p><strong>功能描述</strong>：连接到指定WiFi网络</p>
+<p><strong>注意事项</strong>：密码需为8-64字节ASCII字符</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="AT%2BCREG.html" class="btn btn-neutral float-left" title="AT+CREG" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, 有方科技.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

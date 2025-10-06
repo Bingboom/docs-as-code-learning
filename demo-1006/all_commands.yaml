@@ -1,0 +1,59 @@
+commands:
+- command: AT+CREG
+  title: 查询网络注册状态
+  type:
+  - 执行
+  - 查询
+  - 测试
+  formats:
+  - AT+CREG=[<n>]
+  - AT+CREG?
+  - AT+CREG=?
+  parameters:
+  - name: <n>
+    desc: 控制结果代码输出方式
+    values:
+      '0': 禁用上报
+      '1': 启用上报
+      '2': 上报并包含LAC/CI信息
+  - name: <stat>
+    desc: 网络注册状态
+    values:
+      '0': 未注册
+      '1': 已注册本地网络
+      '2': 正在搜索
+  examples:
+  - cmd: AT+CREG=1
+    resp: OK
+  - cmd: AT+CREG?
+    resp: '+CREG: 0,1 OK'
+  - cmd: AT+CREG=?
+    resp: '+CREG: (0-2) OK'
+  description: 查询或控制模块的网络注册状态
+  notes: AT+CREG=5 返回 ERROR（参数超出范围）
+- command: AT+CWJAP
+  title: 连接WiFi网络
+  type:
+  - 设置
+  - 查询
+  formats:
+  - AT+CWJAP=<ssid>,<pwd>[,<bssid>][,<prio>]
+  - AT+CWJAP?
+  parameters:
+  - name: <ssid>
+    desc: WiFi名称
+    values:
+      格式: 字符串
+      长度: 1-32字节
+  - name: <pwd>
+    desc: WiFi密码
+    values:
+      格式: ASCII字符
+      长度: 8-64字节
+  examples:
+  - cmd: AT+CWJAP="MyWiFi","123456"
+    resp: OK
+  - cmd: AT+CWJAP?
+    resp: +CWJAP:"MyWiFi","aa:bb:cc:dd:ee:ff",-50,1 OK
+  description: 连接到指定WiFi网络
+  notes: 密码需为8-64字节ASCII字符
