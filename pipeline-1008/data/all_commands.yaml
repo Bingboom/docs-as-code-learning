@@ -46,7 +46,7 @@ commands:
   - AT+CSQ
   parameters:
   - name: <signal>
-    desc: 以下为signal(CSQ)与rssi对应关系：
+    desc: 信号强度CSQ
     values:
       '0': <4或99
       '1': <10
@@ -55,7 +55,7 @@ commands:
       '4': <28
       '5': '>=28'
   - name: <ber>
-    desc: ''
+    desc: Xx
     values:
       0...7: 参考GSM 05.08 8.2.4 章节表格中RXQUAL 的取值
       '99': 误码率无法测量

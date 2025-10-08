@@ -18,10 +18,10 @@ Parameters
      - Description
      - Values
    * - <signal>
-     - 以下为signal(CSQ)与rssi对应关系：
+     - 信号强度CSQ
      - N/A
    * - <ber>
-     - —
+     - Xx
      - N/A
 
 Examples
