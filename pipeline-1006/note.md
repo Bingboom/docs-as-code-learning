@@ -1,3 +1,7 @@
+---
+documentclass: ctexart
+---
+
 # 一、 基础 完整的生成链条
 📘 Jupyter Notebook：从 CSV 到 HTML 的完整流水线  
 🔹Step 0. 环境初始化
