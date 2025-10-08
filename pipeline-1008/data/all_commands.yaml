@@ -9,13 +9,13 @@ commands:
   parameters:
   - name: <manufacturer>
     desc: 模组厂商信息、产品名称、版本号
-    values: {}
+    valmap: {}
   - name: <module_version>
     desc: 模组型号
-    values: {}
+    valmap: {}
   - name: <soft_version>
     desc: 模组软件版本
-    values: {}
+    valmap: {}
   examples:
   - cmd: ATI
     resp: ''
@@ -31,7 +31,7 @@ commands:
   parameters:
   - name: <reversion>
     desc: 模组软件版本信息
-    values: {}
+    valmap: {}
   examples:
   - cmd: AT+GMR
     resp: ''
@@ -47,17 +47,16 @@ commands:
   parameters:
   - name: <signal>
     desc: 信号强度CSQ
-    values:
-      '0': <4或99
-      '1': <10
-      '2': <16
-      '3': <22
-      '4': <28
-      '5': '>=28'
+    valmap:
+      '0': <4或99 | <-107 dBm or unknown
+      '1': <10 | <-93dBm
+      '2': <16 | <-81 dBm
+      '3': <22 | <-69dBm
+      '4': <28 | <-57dBm
+      '5': '>=28 | >=-57 dBm'
   - name: <ber>
     desc: Xx
-    values:
-      0...7: 参考GSM 05.08 8.2.4 章节表格中RXQUAL 的取值
+    valmap:
       '99': 误码率无法测量
   examples:
   - cmd: AT+CSQ

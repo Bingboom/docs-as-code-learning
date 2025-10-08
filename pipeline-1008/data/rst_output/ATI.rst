@@ -26,12 +26,3 @@ Parameters
    * - <soft_version>
      - 模组软件版本
      - N/A
-
-Examples
---------
-.. code-block:: none
-
-   ATI
-   
-
-**Description**: 获取模组厂商信息

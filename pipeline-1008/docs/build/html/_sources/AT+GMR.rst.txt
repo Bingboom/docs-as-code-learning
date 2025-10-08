@@ -20,12 +20,3 @@ Parameters
    * - <reversion>
      - 模组软件版本信息
      - N/A
-
-Examples
---------
-.. code-block:: none
-
-   AT+GMR
-   
-
-**Description**: 查询版本信息

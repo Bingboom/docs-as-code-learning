@@ -46,7 +46,6 @@
 <li class="toctree-l1"><a class="reference internal" href="AT%2BGMR.html">AT+GMR</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">AT+CSQ</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -100,21 +99,61 @@
 <tbody>
 <tr class="row-even"><td><p>&lt;signal&gt;</p></td>
 <td><p>信号强度CSQ</p></td>
-<td><p>N/A</p></td>
+<td><table class="docutils align-default">
+<colgroup>
+<col style="width: 33.3%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Key</p></th>
+<th class="head"><p>Value</p></th>
 </tr>
-<tr class="row-odd"><td><p>&lt;ber&gt;</p></td>
-<td><p>Xx</p></td>
-<td><p>N/A</p></td>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>&lt;4或99 | &lt;-107 dBm or unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>&lt;10 | &lt;-93dBm</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>&lt;16 | &lt;-81 dBm</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>&lt;22 | &lt;-69dBm</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>&lt;28 | &lt;-57dBm</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>&gt;=28 | &gt;=-57 dBm</p></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>AT+CSQ
-</pre></div>
-</div>
-<p><strong>Description</strong>: 获取信号强度</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>&lt;ber&gt;</p></td>
+<td><p>Xx</p></td>
+<td><table class="docutils align-default">
+<colgroup>
+<col style="width: 33.3%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Key</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>99</p></td>
+<td><p>误码率无法测量</p></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 
