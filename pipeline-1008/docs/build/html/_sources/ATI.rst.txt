@@ -26,3 +26,5 @@ Parameters
    * - <soft_version>
      - 模组软件版本
      - N/A
+
+**Description**: 获取模组厂商信息，包括厂家、型号和版本。\n命令格式

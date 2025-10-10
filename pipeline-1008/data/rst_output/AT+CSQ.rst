@@ -18,7 +18,7 @@ Parameters
      - Description
      - Values
    * - <signal>
-     - 信号强度CSQ
+     - 以下为signal(CSQ)与rssi对应关系：
      -
        .. list-table::
           :header-rows: 1
@@ -39,7 +39,7 @@ Parameters
           * - 5
             - >=28 | >=-57 dBm
    * - <ber>
-     - Xx
+     - —
      -
        .. list-table::
           :header-rows: 1
@@ -49,3 +49,5 @@ Parameters
             - Value
           * - 99
             - 误码率无法测量
+
+**Description**: 查询接收信号强度<rssi>。\n命令格式

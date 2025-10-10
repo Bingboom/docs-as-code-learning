@@ -20,3 +20,5 @@ Parameters
    * - <reversion>
      - 模组软件版本信息
      - N/A
+
+**Description**: 查询软件版本信息。\n命令格式
