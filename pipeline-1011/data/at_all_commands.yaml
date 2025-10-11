@@ -1,0 +1,57 @@
+commands:
+- command: ATI
+  title: 获取模组厂商信息
+  type:
+  - 执行
+  - 查询
+  formats:
+  - ATI
+  parameters:
+  - name: <manufacturer>
+    desc: 模组厂商信息、产品名称、版本号
+    valmap: {}
+  - name: <module_version>
+    desc: 模组型号
+    valmap: {}
+  - name: <soft_version>
+    desc: 模组软件版本
+    valmap: {}
+  examples: []
+  description: '获取模组厂商信息，包括厂家、型号和版本。
+
+    命令格式'
+  notes: ''
+  meta:
+    order: 1
+    tables: 1
+- command: AT+CSMS
+  title: 选择短信服务
+  type:
+  - 执行
+  - 查询
+  formats:
+  - AT+CSMS
+  parameters:
+  - name: <service>
+    desc: '0：GSM03.40 and GSM03.41；SMS相关AT指令支持 GSM07.05 Phase 2
+
+      1：GSM03.40 and GSM03.41；SMS相关AT指令支持 GSM07.05 Phase 2+'
+    valmap:
+      '0': GSM03.40 and GSM03.41
+      SMS相关AT指令支持: GSM07.05 Phase 2+
+      '1': GSM03.40 and GSM03.41
+  - name: <mt>,<mo>,<bm>
+    desc: '0：不支持
+
+      1：支持'
+    valmap:
+      '0': 不支持
+      '1': 支持
+  examples: []
+  description: '用于支持的短消息包括：发送（SMS-MO）、接收（SMS-MT）、小区广播（SMS-CB）。
+
+    命令'
+  notes: ''
+  meta:
+    order: 2
+    tables: 1

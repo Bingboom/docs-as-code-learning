@@ -1,0 +1,5 @@
+﻿命令,命令标题,命令类型,命令格式,示例命令,示例响应,功能描述,备注,表数量,顺序,参数JSON
+ATI,获取模组厂商信息,执行;查询,ATI,ATI,,"获取模组厂商信息，包括厂家、型号和版本。
+命令格式",,1,1,"[{""name"": ""<manufacturer>"", ""desc"": ""模组厂商信息、产品名称、版本号"", ""valmap"": {}}, {""name"": ""<module_version>"", ""desc"": ""模组型号"", ""valmap"": {}}, {""name"": ""<soft_version>"", ""desc"": ""模组软件版本"", ""valmap"": {}}]"
+AT+CSMS,选择短信服务,执行;查询,AT+CSMS,AT+CSMS,,"用于支持的短消息包括：发送（SMS-MO）、接收（SMS-MT）、小区广播（SMS-CB）。
+命令",,1,2,"[{""name"": ""<service>"", ""desc"": ""0：GSM03.40 and GSM03.41；SMS相关AT指令支持 GSM07.05 Phase 2\n1：GSM03.40 and GSM03.41；SMS相关AT指令支持 GSM07.05 Phase 2+"", ""valmap"": {""0"": ""GSM03.40 and GSM03.41"", ""SMS相关AT指令支持"": ""GSM07.05 Phase 2+"", ""1"": ""GSM03.40 and GSM03.41""}}, {""name"": ""<mt>,<mo>,<bm>"", ""desc"": ""0：不支持\n1：支持"", ""valmap"": {""0"": ""不支持"", ""1"": ""支持""}}]"
