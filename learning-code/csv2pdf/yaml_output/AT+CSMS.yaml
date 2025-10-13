@@ -2,7 +2,15 @@
 命令标题: 选择短信服务
 命令类型: 执行
 响应: <CR><LF>OK<CR><LF>
-示例命令: "AT+CSMS\n\nOK"
-功能描述: "用于支持的短消息包括：发送（SMS-MO）、接收（SMS-MT）、小区广播（SMS-CB）。\n命令"
+示例命令: "AT+CSMS\r\n\r\nOK"
+功能描述: "用于支持的短消息包括：发送（SMS-MO）、接收（SMS-MT）、小区广播（SMS-CB）。\r\n命令"
 备注: 说明示例2
-参数: []
+参数:
+  <service>:
+    __desc__: ''
+    '0': GSM03.40 and GSM03.41；SMS相关AT指令支持 GSM07.05 Phase 2
+    '1': GSM03.40 and GSM03.41；SMS相关AT指令支持 GSM07.05 Phase 2+
+  <mt>,<mo>,<bm>:
+    __desc__: ''
+    '0': 不支持
+    '1': 支持
