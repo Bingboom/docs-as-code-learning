@@ -1,0 +1,39 @@
+﻿章节,命令,命令标题,命令类型,命令格式,响应,响应校正,示例命令,功能描述,备注,表数量,顺序,参数json
+2,AT+CSMS,选择短信服务,执行;查询;测试,AT+CSMS=<service><CR>;AT+CSMS?<CR>;AT+CSMS=?<CR>,"<CR><LF>+CSMS: <mt>,<mo>,<bm>
+<CR><LF>OK<CR><LF>
+Or
+<CR><LF>ERROR<CR><LF>;
+<CR><LF>+CSMS: <service>,<mt>,<mo>,<bm>
+<CR><LF>OK<CR><LF>;
+<CR><LF>+CSMS: (list of supported <service>s)
+<CR><LF>OK<CR><LF>","<CR><LF>+CSMS: <mt>,<mo>,<bm>
+<CR><LF>OK<CR><LF>
+Or
+<CR><LF>ERROR<CR><LF>;<CR><LF>+CSMS: <service>,<mt>,<mo>,<bm>
+<CR><LF>OK<CR><LF>;<CR><LF>+CSMS: (list of supported <service>s)
+<CR><LF>OK<CR><LF>","AT+CSMS=1
+
++CSMS: 1,1,1
+OK
+AT+CSMS=2
+
+ERROR
+AT+CSMS?
+
++CSMS: 1,1,1,1
+OK
+AT+CSMS=?
+
++CSMS: (0,1)
+OK",用于支持的短消息包括：发送（SMS-MO）、接收（SMS-MT）、小区广播（SMS-CB）。,支持多种短消息服务类型,1,2,"{
+""<service>"": {
+""__desc__"": ""短信服务模式选择"",
+""0"": ""GSM03.40/GSM03.41 Phase 2"",
+""1"": ""GSM03.40/GSM03.41 Phase 2+""
+},
+""<mt>,<mo>,<bm>"": {
+""__desc__"": ""下行/上行/广播支持"",
+""0"": ""不支持"",
+""1"": ""支持""
+}
+}"
