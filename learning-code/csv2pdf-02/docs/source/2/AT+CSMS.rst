@@ -25,15 +25,21 @@ AT+CSMS — 选择短信服务
 参数
 ^^^^
 
+
 -  **<service>**：
 
-    - 0: GSM03.40 and GSM03.41；SMS相关AT指令支持 GSM07.05 Phase 2
-    - 1: GSM03.40 and GSM03.41；SMS相关AT指令支持 GSM07.05 Phase 2+
+
+    - 0：GSM03.40 and GSM03.41；SMS相关AT指令支持 GSM07.05 Phase 2
+
+    - 1：GSM03.40 and GSM03.41；SMS相关AT指令支持 GSM07.05 Phase 2+
+
 
 -  **<mt>,<mo>,<bm>**：
 
-    - 0: 不支持
-    - 1: 支持
+
+    - 0：不支持
+
+    - 1：支持
 
 
 

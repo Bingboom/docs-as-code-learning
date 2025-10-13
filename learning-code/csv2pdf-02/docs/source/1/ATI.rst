@@ -25,12 +25,15 @@ ATI — 获取模组厂商信息
 参数
 ^^^^
 
+
 -  **<manufacturer>**：
     模组厂商信息、产品名称、版本号
 
 
+
 -  **<module_version>**：
     模组型号
+
 
 
 -  **<soft_version>**：
