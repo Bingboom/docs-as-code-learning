@@ -2,7 +2,7 @@
 .. _cmd-at+csms:
 
 AT+CSMS：选择短信服务
-=======
+==============
 
 用于支持的短消息包括：发送（SMS-MO）、接收（SMS-MT）、小区广播（SMS-CB）。
 
@@ -24,7 +24,6 @@ AT+CSMS：选择短信服务
     <CR><LF>+CSMS: (list of supported <service>s)
 
     <CR><LF>OK<CR><LF>
-
 
 
 
@@ -58,10 +57,16 @@ AT+CSMS：选择短信服务
 ^^^^
 支持多种短消息服务类型
 
+.. container:: pager
+
+
+
+
 示例命令
 ^^^^^^^^
 
 ::
+
 
 
 
@@ -94,4 +99,5 @@ AT+CSMS：选择短信服务
     +CSMS: (0,1)
 
     OK
+
 
