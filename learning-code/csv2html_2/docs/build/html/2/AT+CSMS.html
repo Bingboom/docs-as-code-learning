@@ -9,7 +9,8 @@
   <title>AT+CSMS：选择短信服务 &mdash; AT Command Manual 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=be9fbbb3" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d6a668ed" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d6a668ed" />
 
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
@@ -45,22 +46,11 @@
               <p class="caption" role="heading"><span class="caption-text">章节目录</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">2</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#"><span class="xref std std-ref">AT+CSMS</span>：选择短信服务</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">执行命令</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">查询命令</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">测试命令</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">参数</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">说明</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">示例命令</a></li>
-</ul>
-</li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#"><span class="xref std std-ref">AT+CSMS</span>：选择短信服务</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">执行命令</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">查询命令</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">测试命令</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">参数</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">说明</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">示例命令</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">AT+CSMS：选择短信服务</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">测试命令</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">参数</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">说明</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">示例命令</a></li>
 </ul>
 </li>
 </ul>
@@ -82,7 +72,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">2</a></li>
-      <li class="breadcrumb-item active"><span class="xref std std-ref">AT+CSMS</span>：选择短信服务</li>
+      <li class="breadcrumb-item active">AT+CSMS：选择短信服务</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/2/AT+CSMS.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -93,40 +83,10 @@
            <div itemprop="articleBody">
              
   <section id="at-csms">
-<span id="cmd-at-csms"></span><h1><span class="xref std std-ref">AT+CSMS</span>：选择短信服务<a class="headerlink" href="#at-csms" title="Link to this heading"></a></h1>
+<span id="cmd-at-csms"></span><h1>AT+CSMS：选择短信服务<a class="headerlink" href="#at-csms" title="Link to this heading"></a></h1>
 <p>用于支持的短消息包括：发送（SMS-MO）、接收（SMS-MT）、小区广播（SMS-CB）。</p>
 <section id="id1">
-<h2>执行命令<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
-<p><strong>命令：</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">AT</span><span class="o">+</span><span class="n">CSMS</span><span class="o">=&lt;</span><span class="n">service</span><span class="o">&gt;&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<p><strong>响应：</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;&lt;</span><span class="n">LF</span><span class="o">&gt;+</span><span class="n">CSMS</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">mt</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;</span><span class="n">mo</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;</span><span class="n">bm</span><span class="o">&gt;</span>
-
-<span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;&lt;</span><span class="n">LF</span><span class="o">&gt;</span><span class="n">OK</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;&lt;</span><span class="n">LF</span><span class="o">&gt;</span>
-
-<span class="n">Or</span>
-
-<span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;&lt;</span><span class="n">LF</span><span class="o">&gt;</span><span class="n">ERROR</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;&lt;</span><span class="n">LF</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-</section>
-<section id="id2">
-<h2>查询命令<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<p><strong>命令：</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>AT+CSMS?&lt;CR&gt;
-</pre></div>
-</div>
-<p><strong>响应：</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;&lt;</span><span class="n">LF</span><span class="o">&gt;+</span><span class="n">CSMS</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">service</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;</span><span class="n">mt</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;</span><span class="n">mo</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;</span><span class="n">bm</span><span class="o">&gt;</span>
-
-<span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;&lt;</span><span class="n">LF</span><span class="o">&gt;</span><span class="n">OK</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;&lt;</span><span class="n">LF</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-</section>
-<section id="id3">
-<h2>测试命令<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<h2>测试命令<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p><strong>命令：</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>AT+CSMS=?&lt;CR&gt;
 </pre></div>
@@ -138,8 +98,8 @@
 </pre></div>
 </div>
 </section>
-<section id="id4">
-<h2>参数<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<section id="id2">
+<h2>参数<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul>
 <li><p><strong>&lt;service&gt;</strong>：</p>
 <blockquote>
@@ -161,25 +121,12 @@
 </li>
 </ul>
 </section>
-<section id="id5">
-<h2>说明<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<section id="id3">
+<h2>说明<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>支持多种短消息服务类型</p>
 </section>
-<section id="id6">
-<h2>示例命令<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">AT</span><span class="o">+</span><span class="n">CSMS</span><span class="o">=</span><span class="mi">1</span>
-</pre></div>
-</div>
-<p>+CSMS: 1,1,1
-OK
-AT+CSMS=2</p>
-<p>ERROR
-AT+CSMS?</p>
-<p>+CSMS: 1,1,1,1
-OK
-AT+CSMS=?</p>
-<p>+CSMS: (0,1)
-OK</p>
+<section id="id4">
+<h2>示例命令<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 </section>
 </section>
 

@@ -1,54 +1,10 @@
 
 .. _cmd-at+csms:
 
-:ref:`AT+CSMS <Basic-AT>`：选择短信服务
---------------------------------------------------------
+AT+CSMS：选择短信服务
+=======
 
 用于支持的短消息包括：发送（SMS-MO）、接收（SMS-MT）、小区广播（SMS-CB）。
-
-
-执行命令
-^^^^
-
-**命令：**
-
-::
-
-    AT+CSMS=<service><CR>
-
-**响应：**
-
-::
-
-
-    <CR><LF>+CSMS: <mt>,<mo>,<bm>
-
-    <CR><LF>OK<CR><LF>
-
-    Or
-
-    <CR><LF>ERROR<CR><LF>
-
-
-
-查询命令
-^^^^
-
-**命令：**
-
-::
-
-    AT+CSMS?<CR>
-
-**响应：**
-
-::
-
-
-    <CR><LF>+CSMS: <service>,<mt>,<mo>,<bm>
-
-    <CR><LF>OK<CR><LF>
-
 
 
 测试命令
@@ -68,6 +24,7 @@
     <CR><LF>+CSMS: (list of supported <service>s)
 
     <CR><LF>OK<CR><LF>
+
 
 
 
@@ -107,22 +64,4 @@
 ::
 
 
-    AT+CSMS=1
 
-+CSMS: 1,1,1
-OK
-AT+CSMS=2
-
-ERROR
-AT+CSMS?
-
-+CSMS: 1,1,1,1
-OK
-AT+CSMS=?
-
-+CSMS: (0,1)
-OK
-
-    
-
-    
