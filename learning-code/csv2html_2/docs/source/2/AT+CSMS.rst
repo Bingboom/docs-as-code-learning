@@ -65,3 +65,33 @@ AT+CSMS：选择短信服务
 
 
 
+    AT+CSMS=1
+
+    
+
+    +CSMS: 1,1,1
+
+    OK
+
+    AT+CSMS=2
+
+    
+
+    ERROR
+
+    AT+CSMS?
+
+    
+
+    +CSMS: 1,1,1,1
+
+    OK
+
+    AT+CSMS=?
+
+    
+
+    +CSMS: (0,1)
+
+    OK
+
