@@ -1,4 +1,0 @@
-﻿section,command,description,parameters,examples
-1.1,ATI,获取模组厂商信息,manufacturer: 模组厂商信息、产品名称、版本号; module_version: 模组型号; soft_version: 模组软件版本,ATI
-1.2,AT+GMR,查询版本信息,re version: 模组软件版本信息,AT+GMR; +GMR:N706-R004-STD-B2-003; OK
-1.3,AT+CSQ,获取信号强度,signal: 信号强度; ber: 误码率,"AT+CSQ; +CSQ:19,2; OK"

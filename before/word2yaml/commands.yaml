@@ -1,9 +1,0 @@
-commands:
-- 指令: AT+CSQ
-  描述: 查询信号强度
-  示例响应: '+CSQ: 25,0'
-- 指令: AT+CGATT
-  描述: 网络附着
-  示例响应: '+CGATT: 1'
-product: N706B
-version: V1.0
