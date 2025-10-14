@@ -1,0 +1,17 @@
+命令: ATI
+命令标题: 获取模组厂商信息
+命令类型: 执行
+响应: <CR><LF>OK<CR><LF>
+示例命令: "ATI\r\n\r\nOK"
+功能描述: "获取模组厂商信息，包括厂家、型号和版本。\r\n命令格式"
+备注: 说明示例1
+参数:
+- name: <manufacturer>
+  desc: 模组厂商信息、产品名称、版本号
+  valmap: {}
+- name: <module_version>
+  desc: 模组型号
+  valmap: {}
+- name: <soft_version>
+  desc: 模组软件版本
+  valmap: {}
