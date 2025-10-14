@@ -107,39 +107,22 @@
 ::
 
 
-
     AT+CSMS=1
 
-    
++CSMS: 1,1,1
+OK
+AT+CSMS=2
 
-    +CSMS: 1,1,1
+ERROR
+AT+CSMS?
 
-    OK
++CSMS: 1,1,1,1
+OK
+AT+CSMS=?
 
-    AT+CSMS=2
-
-    
-
-    ERROR
-
-    AT+CSMS?
-
-    
-
-    +CSMS: 1,1,1,1
-
-    OK
-
-    AT+CSMS=?
++CSMS: (0,1)
+OK
 
     
 
-    +CSMS: (0,1)
-
-    OK
-
-
-
-
-
-
+    

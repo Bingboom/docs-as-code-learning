@@ -11,26 +11,24 @@ Or
 Or
 <CR><LF>ERROR<CR><LF>;<CR><LF>+CSMS: <service>,<mt>,<mo>,<bm>
 <CR><LF>OK<CR><LF>;<CR><LF>+CSMS: (list of supported <service>s)
-<CR><LF>OK<CR><LF>","AT+CSMS=1
-
+<CR><LF>OK<CR><LF>","AT+CSMS=1\n
 +CSMS: 1,1,1
 OK
-AT+CSMS=2
-
+AT+CSMS=2\n
 ERROR
-AT+CSMS?
-
+AT+CSMS?\n
 +CSMS: 1,1,1,1
 OK
-AT+CSMS=?
-
+AT+CSMS=?\n
 +CSMS: (0,1)
 OK",用于支持的短消息包括：发送（SMS-MO）、接收（SMS-MT）、小区广播（SMS-CB）。,支持多种短消息服务类型,1,2,"{
-""<service>"": {""__desc__"": ""短信服务模式选择"",
+""<service>"": {
+""__desc__"": ""短信服务模式选择"",
 ""0"": ""GSM03.40/GSM03.41 Phase 2"",
 ""1"": ""GSM03.40/GSM03.41 Phase 2+""
 },
-""<mt>,<mo>,<bm>"": {""__desc__"": ""下行/上行/广播支持"",
+""<mt>,<mo>,<bm>"": {
+""__desc__"": ""下行/上行/广播支持"",
 ""0"": ""不支持"",
 ""1"": ""支持""
 }
