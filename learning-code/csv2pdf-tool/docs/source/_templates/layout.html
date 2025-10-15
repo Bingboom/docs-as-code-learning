@@ -1,0 +1,17 @@
+
+{% extends "!layout.html" %}
+
+{% block header %}
+  <div class="doc-header">
+    <h1>{{ project }}</h1>
+  </div>
+  {{ super() }}
+{% endblock %}
+
+{% block sidebar1 %}
+  {{ super() }}
+  <div class="custom-sidebar-footer">
+    <hr>
+    <p><a href="{{ pathto('index', 1) }}">📄 返回目录</a></p>
+  </div>
+{% endblock %}
